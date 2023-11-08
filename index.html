@@ -14,11 +14,17 @@
 
     <header class="header">
 
-        <img src="" alt="">
+        <img class="header__logo" src="" alt="">
+
         <h1>Audio ARG</h1>
+
         <nav class="navbar">
-            <ul>
-                <li><a href="#">home</a></li>
+
+            <ul class="navbar__menu">
+
+                <li><a class="navbar__item navbar__item--active" href="#">Home</a></li>
+                <li><a class="navbar__item" href="#">Nosotros</a></li>
+                <li><a class="navbar__item" href="#">Contacto</a></li>
 
             </ul>
         </nav>
@@ -27,22 +33,22 @@
 
     <main class="main">
 
-        <section>
+        <section class="section  section--slider">
             <div>
 
-                <div>
-                    <h4>PrimerSlide</h4>
-                    <img src="" alt="">
+                <div class="slider">
+                    <h4 class="slider__title">PrimerSlide</h4>
+                    <img class="slider__image" src="" alt="">
                 </div>
 
-                <div>
-                    <h4>SegundoSlide</h4>
-                    <img src="" alt="">
+                <div class="slider__two">
+                    <h4 class="slider__title">SegundoSlide</h4>
+                    <img class="slider__image"   src="" alt="">
                 </div>
 
-                <div>
-                    <h4>TercerSlide</h4>
-                    <img src="" alt="">
+                <div class="slider__three">
+                    <h4 class="slider__title">TercerSlide</h4>
+                    <img class="slider__image" src="" alt="">
                 </div>
 
             </div>
@@ -53,23 +59,27 @@
 
         </section>
 
-        <section>
+        <section class="section  section--productos">
             <h3>Galeria de productos</h3>
 
-            <figure>
+            <div>formulario de busqueda y link para crear nuevo producto</div>
 
-                <img src="" alt="breve descripcion de la foto">
-                <h4>Nombre del primer producto</h4>
-                <p>Descripcion del producto</p>
+            <figure class="card card--product">
+
+                <img  class="card__image" src="" alt="breve descripcion de la foto">
+                <h4 class="card__title">Nombre del primer producto</h4>
+                <p class="card__text">Descripcion del producto</p>
+
                 <div>
-                    <button>Agregar</button>
-                    <span>0</span>
-                    <button>Quitar</button>
+                    <span class="card__price">5500</span>
+                    <button class="button button--sm cutton--confirm">Agregar</button>
+                    <span class="card__counter" >0</span>
+                    <button class="button button--sm cutton--danger">Quitar</button>
                 </div>
 
             </figure>
 
-            <figure>
+            <figure class="card card--product">
             
                 <img src="" alt="breve descripcion de la foto">
                 <h4>Nombre del primer producto</h4>
@@ -82,7 +92,7 @@
             
             </figure>
 
-            <figure>
+            <figure class="card card--product">
             
                 <img src="" alt="breve descripcion de la foto">
                 <h4>Nombre del primer producto</h4>
